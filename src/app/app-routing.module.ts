@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 const APP_ROUTES: Routes = [
-  // Modulo Main
   {
     path: 'home',
     component: HomeComponent
@@ -13,6 +12,10 @@ const APP_ROUTES: Routes = [
   {
     path: 'pagina',
     component: NovaPaginaComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'home'
   },
 ];
 
