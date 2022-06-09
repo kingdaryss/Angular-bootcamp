@@ -1,0 +1,23 @@
+<div class="borda">
+  <h4>
+    formulario.component
+  </h4>
+
+  <form *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+
+    <div>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" formControlName="nome">
+    </div>
+
+    <div>
+      <label for="idade">Idade: </label>
+      <input type="text" id="idade" formControlName="idade">
+    </div>
+
+    <app-input [titulo]="'Dinheiro'" formControlName="dinheiro" [input]="form.controls.dinheiro"></app-input>
+
+    <button class="button" type="submit">Enviar</button>
+  </form>
+</div>

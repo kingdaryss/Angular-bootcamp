@@ -1,0 +1,30 @@
+
+
+<div class="borda">
+
+  <h3 [style.color]="cor">{{ titulo }}</h3>
+
+  <p [style.color]="cor">
+    {{ texto }}
+  </p>
+
+  <button [disabled]="desabilitado" (click)="aoClicar();">Alterar valor da variável "condicao"</button>
+
+  <div *ngIf="condicao else condicaoFalsa">
+    Entrando no IF
+  </div>
+
+  <ng-template #condicaoFalsa>
+    <div>
+      Entrando no Else
+    </div>
+  </ng-template>
+
+  <table style="width:200px; margin-top:20px;">
+    <tr *ngFor="let pessoa of listaPessoas">
+      <td>{{ pessoa.nome }}</td>
+      <td>{{ pessoa.idade }}</td>
+    </tr>
+  </table>
+
+</div>

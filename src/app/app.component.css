@@ -1,0 +1,35 @@
+.app-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  max-height: 60px;
+  padding: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.app-body {
+  background-color: #fafafa;
+  min-height: calc(100vh - 90px);
+  padding: 80px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.app-footer {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  bottom: 0;
+  overflow: hidden;
+}
